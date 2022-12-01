@@ -1,14 +1,16 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    <router-view></router-view>
   </div>
-</template>
-
-<style lang="scss">
+  </template>
+<script>
+// import router from './routes.js' // depending on your project structure
+export default {
+  name: 'App'
+  // router: router
+}
+</script>
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,14 +21,14 @@
 
 nav {
   padding: 30px;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
