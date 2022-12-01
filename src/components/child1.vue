@@ -6,7 +6,7 @@
                 <v-btn color="success"
                     class="mr-4 color:green"
                     @click="ok"
-                    style="margin-left:500px"
+                    style="margin-left:500px" 
                     >Message From Child to Parent
                  </v-btn>
                 <v-btn
@@ -14,7 +14,7 @@
                     class="mr-4 color:green"
                     @click="chidToChild"
                     style="margin-left:500px"
-                    >Child to child
+                    >Child to child comunication
                 </v-btn>
                 <h5 class="card-title" style="margin-left:500px">{{thecardtitle}}</h5>
             </div>
